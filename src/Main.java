@@ -17,7 +17,9 @@ public class Main {
 
         System.out.println("Задание 3");
         String fullNameRussian = fullName.replace(fullName,"Иванов Семён Семёнович");
-        String fullNameRussiane = fullNameRussian.replace('ё', 'е');
-        System.out.println("Данные ФИО сотрудника — " + fullNameRussiane);
+        if (fullNameRussian.contains("ё")); {
+            fullNameRussian.replaceAll("ё", "е");
+        }
+        System.out.println("Данные ФИО сотрудника — " + fullNameRussian);
     }
 }
